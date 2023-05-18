@@ -6,5 +6,5 @@ here there are several files:
 3. the rnn output. In our project, there is a part including using RNN algorithm. However, I cannot set the Keras environment in my local computer, so I used the cloud computing by WRDS where they already setted the environment and I just uploaded the output file for the validation set. And we did not used it in the test set as the results in validation set is not good.
 4. the Function file. It is the file where I created the function to take input of X and fake.test.X and return the two optimal reults of CPI and PPI based inflation rates. Here for forecasting inflation based on CPI, we used the combination of ARIMA and NNETAR model. For inflation based on PPI, we adpted the ETS model.
 
-
+*you might noticed that we did not report all results in the summary table. that's because we only reported the method gives out of sample R2 over 0.5 in validation set. 
 # Thank you very much for your grading!

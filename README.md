@@ -6,4 +6,4 @@ here there are several files:
 3. the rnn output. In our project, there is a part including using RNN algorithm. However, I cannot set the Keras environment in my local computer, so I used the cloud computing by WRDS where they already setted the environment and I just uploaded the output file for the validation set. And we did not used it in the test set as the results in validation set is not good.
 
 
-#Thank you very much for your grading!
+# Thank you very much for your grading!

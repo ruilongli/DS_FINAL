@@ -540,8 +540,8 @@ Here we summarized the out of sample R2 performance using the validation set
 First we nneed to concatenate the whole time series of CPI and PPI
 
 ```{r}
-CPI<-c(cpi$CPI,true.testing.X[,67][[1]])
-PPI<-c(ppi$PPI,true.testing.X[,72][[1]])
+CPI<-c(cpi$CPI,fake.testing.X[,67][[1]])
+PPI<-c(ppi$PPI,fake.testing.X[,72][[1]])
 inf_cpi<-diff(CPI,12)
 inf_ppi<-diff(PPI,12)
 train_index<-1:156
@@ -549,7 +549,7 @@ train_index<-1:156
 ```
 
 then do the process in PPI
-
+here in later part, varible with name pred_xx will record the predicted value of inflation and return the Out of sample R2 directly
 ```{r}
 xreg = c(rep(0,60),rep(1,10),rep(0,186-70))
 pred_nn<-rep(0,30)
